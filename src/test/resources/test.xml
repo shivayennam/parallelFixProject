@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Free CRM Suite" parallel="tests" thread-count="3">
+    <test name="CucumberTests" thread-count="3" parallel="classes">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+<!--            <class name="runners.TestRunner2"/>-->
+        </classes>
+    </test>
+</suite>
+
+<!--<suite name="Free CRM Suite" parallel="classes" thread-count="2">-->
+<!--    <test name="CreateCompany">-->
+<!--        <classes>-->
+<!--            <class name="tests.testRunner.TestNGTestRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="AddCompany">-->
+<!--        <classes>-->
+<!--            <class name="tests.testRunner.AddCompanyTestRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
